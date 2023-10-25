@@ -1,16 +1,20 @@
+import { About } from 'components/About/About';
+import { Home } from 'components/Home/Home';
+import { Contacts } from 'components/Contacts/Contacts';
+import { Projects } from 'components/Projects/Projects';
+import { NavBar } from './NavBar/NavBar';
+import { Container } from './styles.styled';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <NavBar />
+      <Container>
+        <Home />
+        <About />
+        <Projects />
+        <Contacts />
+      </Container>
+    </>
   );
 };
