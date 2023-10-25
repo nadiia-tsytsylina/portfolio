@@ -1,0 +1,115 @@
+export const projects = [
+  {
+    id: 8,
+    title: 'Healthy Hub',
+    github: 'https://github.com/nadiia-tsytsylina/healthy-hub',
+    demo: 'https://nadiia-tsytsylina.github.io/healthy-hub/',
+    backend: 'https://github.com/1Kostik/backend_healthyhub',
+    img: 'https://res.cloudinary.com/dn4dxdwur/image/upload/v1698253962/projects/yhrz3dtfa9vtd8grdsuk.png',
+    description:
+      "This is a React application that allows to monitor user's health, nutrition, weight and water intake. Automatically calculates the number of calories depending on weight, gender, height and daily activity. Allows user to add nutrition, water and track charts, reister and login.",
+    technologies: [
+      'React',
+      'React Router',
+      'Redux Toolkit',
+      'Redux Persist',
+      'Axios',
+      'Styled Components',
+      'Webpack',
+      'ChartJs',
+      'Formik',
+      'Yup',
+      'Node.js',
+      'MongoDb',
+      'Express',
+      'Swagger',
+    ],
+  },
+  {
+    id: 7,
+    title: 'Phonebook',
+    github: 'https://github.com/nadiia-tsytsylina/phonebook',
+    demo: 'https://nadiia-tsytsylina.github.io/phonebook/',
+    img: 'https://res.cloudinary.com/dn4dxdwur/image/upload/v1698253963/projects/sowyqvknqtn5qoeo4gbz.png',
+    description:
+      'This is a React application that allows user to register and login to store contacts, including name and phone number. There is also the ability to filter the phone book by contact name, which solves the problem of finding contacts.',
+    technologies: [
+      'React',
+      'React Router',
+      'Redux Toolkit',
+      'Redux Persist',
+      'Axios',
+      'Styled Components',
+      'Webpack',
+    ],
+  },
+  {
+    id: 6,
+    title: 'Book Shelf',
+    github: 'https://github.com/nadiia-tsytsylina/book-shelf',
+    demo: 'https://nadiia-tsytsylina.github.io/book-shelf/',
+    img: 'https://res.cloudinary.com/dn4dxdwur/image/upload/v1698253963/projects/wfgpvpczlindxageixnv.png',
+    description:
+      'Website with responsive layout, modal windows, dark and light theme, authorization and pagination, using API services for searching and buying books. The website contains 2 pages: Home page - page with the most populars from each category and ability to see all books in each category; Shopping page - page with books, that user has added to cart',
+    technologies: ['HTML5', 'CSS', 'JavaScript', 'Parcel', 'REST API'],
+  },
+  {
+    id: 5,
+    title: 'Movies App',
+    github: 'https://github.com/nadiia-tsytsylina/movies-app',
+    demo: 'https://nadiia-tsytsylina.github.io/movies-app/',
+    img: 'https://res.cloudinary.com/dn4dxdwur/image/upload/v1698253963/projects/vtbs3oufophfcaeh3hua.png',
+    description:
+      'This is a React application, that allows user to search for movies by name and find out detailed information about the film, its cast and reviews.',
+    technologies: [
+      'React',
+      'React Router',
+      'Axios',
+      'Styled Components',
+      'Webpack',
+      'Toastify',
+      'React icons',
+    ],
+  },
+  {
+    id: 4,
+    title: 'Ice cream',
+    github: 'https://github.com/nadiia-tsytsylina/ice-cream',
+    demo: 'https://nadiia-tsytsylina.github.io/ice-cream/',
+    img: 'https://res.cloudinary.com/dn4dxdwur/image/upload/v1698253963/projects/p5p4hucbksdmgwc3hmts.png',
+    description:
+      'Ice cream company one-page website with responsive layout, modal windows, data validation, animations, and attractive design.',
+    technologies: ['HTML5', 'CSS', 'JavaScript', 'Parcel'],
+  },
+  {
+    id: 3,
+    title: 'Image Finder',
+    github: 'https://github.com/nadiia-tsytsylina/image-finder',
+    demo: 'https://nadiia-tsytsylina.github.io/image-finder/',
+    img: 'https://res.cloudinary.com/dn4dxdwur/image/upload/v1698253964/projects/awbbnrw4wsgapzadzost.png',
+    description:
+      'This is a React application, that allows user to search for images by tags (name, color, theme) and displays the results as an image gallery.',
+    technologies: ['React', 'Axios', 'CSS modules', 'Webpack'],
+  },
+
+  {
+    id: 2,
+    title: 'Credit App',
+    github: 'https://github.com/nadiia-tsytsylina/credit-app',
+    demo: 'https://nadiia-tsytsylina.github.io/credit-app/',
+    img: 'https://res.cloudinary.com/dn4dxdwur/image/upload/v1698253962/projects/a5rt2uzpi4p2ozgds3qm.png',
+    description:
+      'Financial technology company one-page website with responsive layout and animations.',
+    technologies: ['HTML5', 'CSS', 'JavaScript', 'Parcel'],
+  },
+  {
+    id: 1,
+    title: 'Web Studio',
+    github: 'https://github.com/nadiia-tsytsylina/Web-studio',
+    demo: 'https://nadiia-tsytsylina.github.io/Web-studio/',
+    img: 'https://res.cloudinary.com/dn4dxdwur/image/upload/v1698253963/projects/l1qlaylog3v7rxr7anx4.png',
+    description:
+      "This is a digital marketing company website with responsive layout. The web-site contains 3 pages: Home page - the page with general information about the company, it's advantages, company team and customers with ability to leave user's contacts; Portfolio page - the page with company's works; Contacts page.",
+    technologies: ['HTML5', 'CSS', 'JavaScript'],
+  },
+];
