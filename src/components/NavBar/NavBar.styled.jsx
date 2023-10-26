@@ -99,10 +99,9 @@ export const Name = styled.h2`
   }
 `;
 
-export const Avatar = styled.img`
+export const Logo = styled.img`
   width: 40px;
   height: 40px;
-  border-radius: 50%;
   object-fit: cover;
 
   @media (min-width: 768px) {

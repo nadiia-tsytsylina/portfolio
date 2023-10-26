@@ -6,10 +6,10 @@ import {
   StyledLink,
   NameContainer,
   Name,
-  Avatar,
+  Logo,
   BurgerButton,
 } from './NavBar.styled';
-import avatar from '../../assets/images/avatar.jpg';
+import logo from '../../assets/images/logo.png';
 import { useState } from 'react';
 
 export const NavBar = () => {
@@ -27,7 +27,7 @@ export const NavBar = () => {
     <>
       <Container>
         <NameContainer>
-          <Avatar src={avatar} alt="avatar" />
+          <Logo src={logo} alt="avatar" />
           <Name>Nadiia Tsytsylina</Name>
         </NameContainer>
         <BurgerButton type="button" onClick={openMobileMenu}>
