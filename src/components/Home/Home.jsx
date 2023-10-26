@@ -8,7 +8,6 @@ import {
   CvLink,
   ContactsLink,
 } from './Home.styled';
-import CV from '../../assets/images/cv.pdf';
 
 export const Home = () => {
   return (
@@ -20,7 +19,11 @@ export const Home = () => {
         <Subtitle>Junior Frontend Developer</Subtitle>
       </div>
       <ButtonContainer>
-        <CvLink href={CV} download>
+        <CvLink
+          href="https://drive.google.com/file/d/1uBu_jL-roanC9o2Os4oEClICC9s1pWIa/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
           My CV <LuDownload />
         </CvLink>
         <ContactsLink
