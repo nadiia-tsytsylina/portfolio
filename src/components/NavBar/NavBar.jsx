@@ -1,3 +1,5 @@
+import { LuAlignJustify } from 'react-icons/lu';
+import Overlay from 'components/MobileMenu/Overlay';
 import {
   Container,
   Navigation,
@@ -5,10 +7,22 @@ import {
   NameContainer,
   Name,
   Avatar,
+  BurgerButton,
 } from './NavBar.styled';
 import avatar from '../../assets/images/avatar.jpg';
+import { useState } from 'react';
 
 export const NavBar = () => {
+  const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
+
+  const openMobileMenu = () => {
+    setIsOpenMobileMenu(true);
+  };
+
+  const closeMobileMenu = () => {
+    setIsOpenMobileMenu(false);
+  };
+
   return (
     <>
       <Container>
@@ -16,6 +30,9 @@ export const NavBar = () => {
           <Avatar src={avatar} alt="avatar" />
           <Name>Nadiia Tsytsylina</Name>
         </NameContainer>
+        <BurgerButton type="button" onClick={openMobileMenu}>
+          <LuAlignJustify />
+        </BurgerButton>
         <Navigation>
           <StyledLink
             to="home"
@@ -55,6 +72,11 @@ export const NavBar = () => {
           </StyledLink>
         </Navigation>
       </Container>
+      {isOpenMobileMenu ? (
+        <Overlay onClose={closeMobileMenu} />
+      ) : (
+        <Overlay isClosed={true} />
+      )}
     </>
   );
 };
