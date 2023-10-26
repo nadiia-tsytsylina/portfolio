@@ -20,5 +20,5 @@ export const skills = [
   'Swagger',
   'Formik',
   'Yup',
-  'Responsible/Adaptive layout',
+  'Responsible/ Adaptive layout',
 ];
