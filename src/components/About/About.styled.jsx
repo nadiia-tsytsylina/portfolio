@@ -68,10 +68,6 @@ export const AboutContainer = styled.div`
     width: 50%;
     gap: 20px;
   }
-
-  /* @media (min-width: 1024px) {
-    padding-right: 40px;
-  } */
 `;
 
 export const TextContainer = styled.div`
@@ -98,10 +94,6 @@ export const SkillsContainer = styled.div`
     width: 50%;
     gap: 20px;
   }
-
-  /* @media (min-width: 1024px) {
-    padding-left: 40px;
-  } */
 `;
 
 export const SkillsList = styled.ul`

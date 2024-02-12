@@ -11,57 +11,63 @@ import {
   SocialList,
   SocialLink,
 } from './Contacts.styled';
+import {
+  EMAIL,
+  LOCATION,
+  MENU_PATH,
+  PHONE,
+  SOCIAL_LINK,
+} from 'constants/constants';
 
 export const Contacts = () => {
   return (
-    <Section id="contacts">
+    <Section id={MENU_PATH.contacts}>
       <Title>Contacts</Title>
       <ContactContainer>
         <ContactList>
           <li>
-            <ContactLink href="mailto:miniova95@gmail.com">
-              miniova95@gmail.com
-            </ContactLink>
+            <ContactLink href={`mailto:${EMAIL}`}>{EMAIL}</ContactLink>
           </li>
           <li>
-            <ContactLink href="tel:+380961640306">+380 96 164 0306</ContactLink>
+            <ContactLink href={`tel:${PHONE}`}>{PHONE}</ContactLink>
           </li>
           <li>
             <Address>
               <LuMapPin style={{ color: 'var(--accent-color)' }} />
-              Lviv, Ukraine<Span>(ready to relocate)</Span>
+              {LOCATION}
+              <Span>(ready to relocate)</Span>
             </Address>
           </li>
         </ContactList>
         <SocialList>
           <li>
             <SocialLink
-              href="https://t.me/Nadiia_tsytsylina"
+              href={SOCIAL_LINK.telegram.link}
               target="_blank"
               rel="noopener noreferrer nofollow"
             >
               <FaTelegram />
-              Telegram
+              {SOCIAL_LINK.telegram.name}
             </SocialLink>
           </li>
           <li>
             <SocialLink
-              href="https://www.linkedin.com/in/nadiia-tsytsylina/"
+              href={SOCIAL_LINK.linkedin.link}
               target="_blank"
               rel="noopener noreferrer nofollow"
             >
               <FaLinkedin />
-              Linkedin
+              {SOCIAL_LINK.linkedin.name}
             </SocialLink>
           </li>
           <li>
             <SocialLink
-              href="https://github.com/nadiia-tsytsylina"
+              href={SOCIAL_LINK.gitHub.link}
               target="_blank"
               rel="noopener noreferrer nofollow"
             >
               <FaGithub />
-              GitHub
+              {SOCIAL_LINK.gitHub.name}
             </SocialLink>
           </li>
         </SocialList>

@@ -12,10 +12,11 @@ import {
   SkillsItem,
 } from './About.styled';
 import { skills } from 'data/skills';
+import { MENU_PATH } from 'constants/constants';
 
 export const About = () => {
   return (
-    <Section id="about">
+    <Section id={MENU_PATH.about}>
       <Title>About me</Title>
       <Container>
         <AboutContainer>
@@ -31,6 +32,13 @@ export const About = () => {
               ones, and I also have one individual Pet project. I have
               experience working in Team Challenge on a team project, where I
               was one of two Frontend Developers.
+            </AboutText>
+            <AboutText>
+              Successfully completed a three-month internship at ZenBitTech on
+              Full-Stack developer position. During this time, I mastered many
+              new technologies and improved my skills. After the internship, I
+              can say with confidence that my approach to writing code has
+              radically changed and I gained incredible work experience
             </AboutText>
             <AboutText>
               My goal is to join a team that is both friendly and professional,

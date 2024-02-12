@@ -52,11 +52,9 @@ export const ContactList = styled.ul`
   justify-content: center;
   align-items: center;
   gap: 10px;
-  /* width: 440px; */
 
   @media (min-width: 768px) {
     gap: 20px;
-    /* width: 440px; */
     align-items: flex-start;
   }
 
@@ -112,11 +110,9 @@ export const SocialList = styled.ul`
   justify-content: center;
   align-items: center;
   gap: 10px;
-  /* width: 440px; */
 
   @media (min-width: 768px) {
     gap: 20px;
-    /* width: 440px; */
   }
 
   @media (min-width: 1024px) {
