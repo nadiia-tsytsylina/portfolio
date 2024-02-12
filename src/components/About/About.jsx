@@ -24,8 +24,8 @@ export const About = () => {
           <TextContainer>
             <AboutText>
               I'm a Junior Front-End developer. I possess HTML, CSS, JavaScript,
-              React and Next.js knowledge. I have experience working on both
-              team and individual projects.
+              TypeScript, React and Next.js knowledge. I have experience working
+              on both team and individual projects.
             </AboutText>
             <AboutText>
               During my studies, I took part in 3 team projects, 3 individual
