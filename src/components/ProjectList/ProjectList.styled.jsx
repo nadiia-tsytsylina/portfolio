@@ -23,7 +23,7 @@ export const Pagination = styled.div`
   gap: 10px;
 `;
 
-export const PaginationButton = styled.button`
+const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,15 +41,23 @@ export const PaginationButton = styled.button`
     background-color: var(--accent-color);
   }
 
-  &:disabled {
-    background-color: var(--button-color);
-  }
-
   @media (min-width: 768px) {
     gap: 4px;
     padding: 6px;
     font-size: 18px;
     width: 30px;
     height: 30px;
+  }
+`;
+
+export const PaginationButton = styled(Button)`
+  &:disabled {
+    background-color: var(--button-color);
+  }
+`;
+
+export const PageButton = styled(Button)`
+  &:disabled {
+    background-color: var(--accent-color);
   }
 `;

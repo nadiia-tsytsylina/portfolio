@@ -8,7 +8,12 @@ import {
   PAGINATION_STEP,
   SECOND_PAGE,
 } from 'constants/constants';
-import { List, Pagination, PaginationButton } from './ProjectList.styled';
+import {
+  List,
+  Pagination,
+  PaginationButton,
+  PageButton,
+} from './ProjectList.styled';
 
 export const ProjectList = () => {
   const [page, setPage] = useState(FIRST_PAGE);
@@ -47,20 +52,20 @@ export const ProjectList = () => {
           <LuChevronLeft />
         </PaginationButton>
 
-        <PaginationButton
+        <PageButton
           type="button"
           onClick={() => setPage(FIRST_PAGE)}
           disabled={page === FIRST_PAGE}
         >
           {FIRST_PAGE}
-        </PaginationButton>
-        <PaginationButton
+        </PageButton>
+        <PageButton
           type="button"
           onClick={() => setPage(SECOND_PAGE)}
           disabled={page === SECOND_PAGE}
         >
           {SECOND_PAGE}
-        </PaginationButton>
+        </PageButton>
 
         <PaginationButton
           type="button"
