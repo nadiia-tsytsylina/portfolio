@@ -1,4 +1,6 @@
 import { LuDownload } from 'react-icons/lu';
+import { TransitionLink } from 'components/reusable/TransitionLink';
+import { CV_LINK, LINK_VARIANT, MENU_PATH } from 'constants/constants';
 import {
   Section,
   Title,
@@ -7,8 +9,6 @@ import {
   ButtonContainer,
   CvLink,
 } from './Home.styled';
-import { TransitionLink } from 'components/reusable/TransitionLink';
-import { CV_LINK, LINK_VARIANT, MENU_PATH } from 'constants/constants';
 
 export const Home = () => {
   return (

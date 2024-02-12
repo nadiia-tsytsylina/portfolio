@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import { LuAlignJustify } from 'react-icons/lu';
-import Overlay from 'components/MobileMenu/Overlay';
+import { Overlay } from 'components/MobileMenu/Overlay';
 import { TransitionLink } from 'components/reusable/TransitionLink';
+import logo from 'assets/images/logo.png';
+import { LINK_VARIANT, MENU_PATH } from 'constants/constants';
 import {
   Container,
   Navigation,
@@ -9,9 +12,6 @@ import {
   Logo,
   BurgerButton,
 } from './NavBar.styled';
-import logo from '../../assets/images/logo.png';
-import { useState } from 'react';
-import { LINK_VARIANT, MENU_PATH } from 'constants/constants';
 
 export const NavBar = () => {
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);

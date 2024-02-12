@@ -1,6 +1,13 @@
 import { LuMapPin } from 'react-icons/lu';
 import { FaTelegram, FaGithub, FaLinkedin } from 'react-icons/fa';
 import {
+  EMAIL,
+  LOCATION,
+  MENU_PATH,
+  PHONE,
+  SOCIAL_LINK,
+} from 'constants/constants';
+import {
   Section,
   Title,
   ContactContainer,
@@ -11,13 +18,6 @@ import {
   SocialList,
   SocialLink,
 } from './Contacts.styled';
-import {
-  EMAIL,
-  LOCATION,
-  MENU_PATH,
-  PHONE,
-  SOCIAL_LINK,
-} from 'constants/constants';
 
 export const Contacts = () => {
   return (

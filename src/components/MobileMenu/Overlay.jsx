@@ -1,6 +1,6 @@
-import MobileMenu from './MobileMenu';
+import { MobileMenu } from './MobileMenu';
 
-export default function Overlay({ onClose, isClosed }) {
+export const Overlay = ({ onClose, isClosed }) => {
   return (
     <>
       {isClosed ? (
@@ -22,4 +22,4 @@ export default function Overlay({ onClose, isClosed }) {
       )}
     </>
   );
-}
+};

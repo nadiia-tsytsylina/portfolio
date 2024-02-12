@@ -1,6 +1,6 @@
+import { ProjectList } from 'components/ProjectList/ProjectList';
 import { MENU_PATH } from 'constants/constants';
 import { Title, Section } from './Projects.styled';
-import { ProjectList } from 'components/ProjectList/ProjectList';
 
 export const Projects = () => {
   return (

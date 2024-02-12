@@ -1,15 +1,15 @@
 import { useEffect } from 'react';
 import { LuX } from 'react-icons/lu';
+import { TransitionLink } from 'components/reusable/TransitionLink';
+import { LINK_VARIANT, MENU_PATH } from 'constants/constants';
 import {
   OverlayContainer,
   Menu,
   CloseButton,
   Navigation,
 } from './MobileMenu.styled';
-import { TransitionLink } from 'components/reusable/TransitionLink';
-import { LINK_VARIANT, MENU_PATH } from 'constants/constants';
 
-export default function MobileMenu({ onClose, style }) {
+export const MobileMenu = ({ onClose, style }) => {
   useEffect(() => {
     const handleKeyDown = event => {
       if (event.code === 'Escape') {
@@ -59,4 +59,4 @@ export default function MobileMenu({ onClose, style }) {
       </Menu>
     </OverlayContainer>
   );
-}
+};

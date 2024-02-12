@@ -1,4 +1,6 @@
 import { nanoid } from 'nanoid';
+import { skills } from 'data/skills';
+import { MENU_PATH } from 'constants/constants';
 import {
   Section,
   Title,
@@ -11,8 +13,6 @@ import {
   SkillsList,
   SkillsItem,
 } from './About.styled';
-import { skills } from 'data/skills';
-import { MENU_PATH } from 'constants/constants';
 
 export const About = () => {
   return (

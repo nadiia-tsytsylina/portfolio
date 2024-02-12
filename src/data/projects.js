@@ -5,7 +5,7 @@ export const projects = [
     github: 'https://github.com/ZenBit-Tech/ctrlchamps_fe',
     demo: 'https://ctrlchamps-fe-develop.vercel.app/',
     backend: 'https://github.com/ZenBit-Tech/ctrlchamps_be',
-    img: 'https://res.cloudinary.com/dn4dxdwur/image/upload/v1707738164/projects/hrr5t9rtlapw2qxmxmbu.png',
+    img: 'https://res.cloudinary.com/dn4dxdwur/image/upload/v1707748150/projects/gkftq7qk9jlvzcbyen1d.png',
     description:
       'React application, that allows the user to register as a client or caregiver . The client can create appointments for patient care (one-time or recurring) and select a caregiver (using filters, ratings, schedules, location) for this appointment. Caregiver can accept appointments and receive payment for the work done. There is also the opportunity to hold a meeting (virtual assessment) before the appointment. The application has an admin panel.',
     technologies: [
