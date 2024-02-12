@@ -28,9 +28,9 @@ export const About = () => {
               on both team and individual projects.
             </AboutText>
             <AboutText>
-              During my studies, I took part in 3 team projects, 3 individual
-              ones, and I also have one individual Pet project. I have
-              experience working in Team Challenge on a team project, where I
+              I have been coding for more, than 1 year and during this time I
+              have done 5 successful team projects and 5 individual ones. I have
+              experience working in a Team Challenge on a team project, where I
               was one of two Frontend Developers.
             </AboutText>
             <AboutText>
