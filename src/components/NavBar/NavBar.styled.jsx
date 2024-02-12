@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { Link } from 'react-scroll';
 
 export const Container = styled.div`
   position: fixed;
@@ -50,30 +49,6 @@ export const Navigation = styled.nav`
 
   @media (min-width: 1440px) {
     gap: 20px;
-  }
-`;
-
-export const StyledLink = styled(Link)`
-  padding: 20px 0;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: var(--white-text);
-  font-weight: 500;
-  transition: color 0.3s;
-  cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &.active {
-    color: var(--accent-color);
-  }
-
-  &:hover,
-  :focus {
-    color: var(--accent-color);
-  }
-
-  @media (min-width: 1024px) {
-    font-size: 24px;
   }
 `;
 

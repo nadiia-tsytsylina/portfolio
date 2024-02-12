@@ -1,9 +1,9 @@
 import { LuAlignJustify } from 'react-icons/lu';
 import Overlay from 'components/MobileMenu/Overlay';
+import { TransitionLink } from 'components/reusable/TransitionLink';
 import {
   Container,
   Navigation,
-  StyledLink,
   NameContainer,
   Name,
   Logo,
@@ -11,6 +11,7 @@ import {
 } from './NavBar.styled';
 import logo from '../../assets/images/logo.png';
 import { useState } from 'react';
+import { LINK_VARIANT, MENU_PATH } from 'constants/constants';
 
 export const NavBar = () => {
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
@@ -34,42 +35,16 @@ export const NavBar = () => {
           <LuAlignJustify />
         </BurgerButton>
         <Navigation>
-          <StyledLink
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={500}
-          >
-            Home
-          </StyledLink>
-          <StyledLink
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={500}
-          >
-            About
-          </StyledLink>
-          <StyledLink
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={500}
-          >
-            Projects
-          </StyledLink>
-          <StyledLink
-            to="contacts"
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={500}
-          >
-            Contacts
-          </StyledLink>
+          <TransitionLink path={MENU_PATH.home} variant={LINK_VARIANT.nav} />
+          <TransitionLink path={MENU_PATH.about} variant={LINK_VARIANT.nav} />
+          <TransitionLink
+            path={MENU_PATH.projects}
+            variant={LINK_VARIANT.nav}
+          />
+          <TransitionLink
+            path={MENU_PATH.contacts}
+            variant={LINK_VARIANT.nav}
+          />
         </Navigation>
       </Container>
       {isOpenMobileMenu ? (

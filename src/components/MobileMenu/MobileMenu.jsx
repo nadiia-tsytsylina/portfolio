@@ -4,9 +4,10 @@ import {
   OverlayContainer,
   Menu,
   CloseButton,
-  StyledLink,
   Navigation,
 } from './MobileMenu.styled';
+import { TransitionLink } from 'components/reusable/TransitionLink';
+import { LINK_VARIANT, MENU_PATH } from 'constants/constants';
 
 export default function MobileMenu({ onClose, style }) {
   useEffect(() => {
@@ -34,46 +35,26 @@ export default function MobileMenu({ onClose, style }) {
           <LuX />
         </CloseButton>
         <Navigation>
-          <StyledLink
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={500}
-            onClick={onClose}
-          >
-            Home
-          </StyledLink>
-          <StyledLink
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={500}
-            onClick={onClose}
-          >
-            About
-          </StyledLink>
-          <StyledLink
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={500}
-            onClick={onClose}
-          >
-            Projects
-          </StyledLink>
-          <StyledLink
-            to="contacts"
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={500}
-            onClick={onClose}
-          >
-            Contacts
-          </StyledLink>
+          <TransitionLink
+            variant={LINK_VARIANT.mobile}
+            path={MENU_PATH.home}
+            onClose={onClose}
+          />
+          <TransitionLink
+            variant={LINK_VARIANT.mobile}
+            path={MENU_PATH.about}
+            onClose={onClose}
+          />
+          <TransitionLink
+            variant={LINK_VARIANT.mobile}
+            path={MENU_PATH.projects}
+            onClose={onClose}
+          />
+          <TransitionLink
+            variant={LINK_VARIANT.mobile}
+            path={MENU_PATH.contacts}
+            onClose={onClose}
+          />
         </Navigation>
       </Menu>
     </OverlayContainer>

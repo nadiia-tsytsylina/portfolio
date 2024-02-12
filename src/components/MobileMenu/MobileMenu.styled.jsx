@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { Link } from 'react-scroll';
 
 export const OverlayContainer = styled.div`
   position: fixed;
@@ -47,30 +46,6 @@ export const Navigation = styled.nav`
   align-items: center;
   justify-content: center;
   gap: 10px;
-
-  @media (min-width: 768px) {
-    display: none;
-  }
-`;
-
-export const StyledLink = styled(Link)`
-  padding: 20px 0;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: var(--white-text);
-  font-weight: 500;
-  transition: color 0.3s;
-  cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &.active {
-    color: var(--accent-color);
-  }
-
-  &:hover,
-  :focus {
-    color: var(--accent-color);
-  }
 
   @media (min-width: 768px) {
     display: none;

@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { Link } from 'react-scroll';
 
 export const Section = styled.section`
   padding: 80px 40px;
@@ -85,33 +84,6 @@ export const CvLink = styled.a`
   color: var(--dark-text);
   width: 128px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    background-color: var(--accent-color);
-  }
-
-  @media (min-width: 768px) {
-    padding: 10px 16px;
-    font-size: 30px;
-    width: 232px;
-  }
-`;
-
-export const ContactsLink = styled(Link)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border: none;
-  padding: 6px 8px;
-  background-color: var(--button-color);
-  border-radius: 12px;
-  font-size: 16px;
-  font-family: inherit;
-  color: var(--dark-text);
-  width: 128px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
 
   &:hover {
     background-color: var(--accent-color);

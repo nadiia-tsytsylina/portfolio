@@ -1,4 +1,4 @@
-import { LuDownload, LuSend } from 'react-icons/lu';
+import { LuDownload } from 'react-icons/lu';
 import {
   Section,
   Title,
@@ -6,12 +6,13 @@ import {
   Subtitle,
   ButtonContainer,
   CvLink,
-  ContactsLink,
 } from './Home.styled';
+import { TransitionLink } from 'components/reusable/TransitionLink';
+import { CV_LINK, LINK_VARIANT, MENU_PATH } from 'constants/constants';
 
 export const Home = () => {
   return (
-    <Section id="home">
+    <Section id={MENU_PATH.home}>
       <div>
         <Title>
           Hey, I'm <Span>Nadiia Tsytsylina</Span>
@@ -20,21 +21,13 @@ export const Home = () => {
       </div>
       <ButtonContainer>
         <CvLink
-          href="https://drive.google.com/file/d/1uBu_jL-roanC9o2Os4oEClICC9s1pWIa/view?usp=sharing"
+          href={CV_LINK}
           target="_blank"
           rel="noopener noreferrer nofollow"
         >
           My CV <LuDownload />
         </CvLink>
-        <ContactsLink
-          to="contacts"
-          spy={true}
-          smooth={true}
-          offset={-80}
-          duration={500}
-        >
-          Contact Me <LuSend />
-        </ContactsLink>
+        <TransitionLink variant={LINK_VARIANT.home} />
       </ButtonContainer>
     </Section>
   );
