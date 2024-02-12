@@ -1,13 +1,14 @@
-import { LuArrowLeft, LuArrowRight } from 'react-icons/lu';
+import { useMemo, useState } from 'react';
+import { LuChevronRight, LuChevronLeft } from 'react-icons/lu';
 import { ProjectItem } from 'components/ProjectItem/ProjectItem';
-import { List, Pagination, PaginationButton } from './ProjectList.styled';
 import { projects } from 'data/projects';
-import { useState } from 'react';
 import {
   FIRST_PAGE,
   PAGINATION_LIMIT,
   PAGINATION_STEP,
+  SECOND_PAGE,
 } from 'constants/constants';
+import { List, Pagination, PaginationButton } from './ProjectList.styled';
 
 export const ProjectList = () => {
   const [page, setPage] = useState(FIRST_PAGE);
@@ -17,7 +18,10 @@ export const ProjectList = () => {
 
   const startIndex = (page - PAGINATION_STEP) * PAGINATION_LIMIT;
   const endIndex = startIndex + PAGINATION_LIMIT;
-  const currentProjects = projects.slice(startIndex, endIndex);
+  const currentProjects = useMemo(
+    () => projects.slice(startIndex, endIndex),
+    [startIndex, endIndex]
+  );
 
   const goToPreviousPage = () => {
     setPage(prevPage => Math.max(prevPage - PAGINATION_STEP, FIRST_PAGE));
@@ -40,11 +44,22 @@ export const ProjectList = () => {
           onClick={goToPreviousPage}
           disabled={page === FIRST_PAGE}
         >
-          <LuArrowLeft />
+          <LuChevronLeft />
         </PaginationButton>
 
-        <PaginationButton type="button" disabled>
-          {page}
+        <PaginationButton
+          type="button"
+          onClick={() => setPage(FIRST_PAGE)}
+          disabled={page === FIRST_PAGE}
+        >
+          {FIRST_PAGE}
+        </PaginationButton>
+        <PaginationButton
+          type="button"
+          onClick={() => setPage(SECOND_PAGE)}
+          disabled={page === SECOND_PAGE}
+        >
+          {SECOND_PAGE}
         </PaginationButton>
 
         <PaginationButton
@@ -52,7 +67,7 @@ export const ProjectList = () => {
           onClick={goToNextPage}
           disabled={page === totalPages}
         >
-          <LuArrowRight />
+          <LuChevronRight />
         </PaginationButton>
       </Pagination>
     </>
