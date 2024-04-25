@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: 10,
+    id: 11,
     title: 'CtrlChamps',
     github: 'https://github.com/ZenBit-Tech/ctrlchamps_fe',
     demo: 'https://ctrlchamps-fe-develop.vercel.app/',
@@ -27,7 +27,7 @@ export const projects = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     title: 'Healthy Hub',
     github: 'https://github.com/nadiia-tsytsylina/healthy-hub',
     demo: 'https://nadiia-tsytsylina.github.io/healthy-hub/',
@@ -53,7 +53,7 @@ export const projects = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     title: 'Adbazaar',
     github: 'https://github.com/toryrory/adbazaar-frontend',
     demo: 'https://adbazaar-frontend-nu.vercel.app/',
@@ -73,7 +73,7 @@ export const projects = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: 'Phonebook',
     github: 'https://github.com/nadiia-tsytsylina/phonebook',
     demo: 'https://nadiia-tsytsylina.github.io/phonebook/',
@@ -85,9 +85,30 @@ export const projects = [
       'React Router',
       'Redux Toolkit',
       'Redux Persist',
+      'JavaScript',
       'Axios',
       'Styled Components',
       'Webpack',
+    ],
+  },
+  {
+    id: 7,
+    title: 'Rent car App',
+    github: 'https://github.com/nadiia-tsytsylina/rent-car-app',
+    demo: 'https://nadiia-tsytsylina.github.io/rent-car-app/',
+    img: 'https://res.cloudinary.com/dn4dxdwur/image/upload/v1708516106/projects/bdoxfokubmdrlku19qk1.png',
+    description:
+      'Web application that includes 3 pages - main page with contacts, catalog page and favorites page. The app allows to filter cars by model, price, mileage and add cars to favorites.',
+    technologies: [
+      'React',
+      'React Router',
+      'Redux Toolkit',
+      'Redux Persist',
+      'JavaScript',
+      'Axios',
+      'Styled Components',
+      'Webpack',
+      'REST API',
     ],
   },
   {
@@ -111,6 +132,7 @@ export const projects = [
     technologies: [
       'React',
       'React Router',
+      'JavaScript',
       'Axios',
       'Styled Components',
       'Webpack',
@@ -136,7 +158,7 @@ export const projects = [
     img: 'https://res.cloudinary.com/dn4dxdwur/image/upload/v1698253964/projects/awbbnrw4wsgapzadzost.png',
     description:
       'This is a React application, that allows user to search for images by tags (name, color, theme) and displays the results as an image gallery.',
-    technologies: ['React', 'Axios', 'CSS modules', 'Webpack'],
+    technologies: ['React', 'Axios', 'JavaScript', 'CSS modules', 'Webpack'],
   },
 
   {

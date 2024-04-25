@@ -29,7 +29,7 @@ export const About = () => {
             </AboutText>
             <AboutText>
               I have been coding for more, than 1 year and during this time I
-              have done 5 successful team projects and 5 individual ones. I have
+              have done 5 successful team projects and 6 individual ones. I have
               experience working in a Team Challenge on a team project, where I
               was one of two Frontend Developers.
             </AboutText>
