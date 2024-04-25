@@ -1,6 +1,6 @@
 export const FIRST_PAGE = 1;
 export const SECOND_PAGE = 2;
-export const PAGINATION_LIMIT = 5;
+export const PAGINATION_LIMIT = 6;
 export const PAGINATION_STEP = 1;
 export const EMAIL = 'miniova95@gmail.com';
 export const PHONE = '+380961640306';
@@ -19,6 +19,7 @@ export const LINK_VARIANT = {
   nav: 'nav',
   home: 'home',
   mobile: 'mobile',
+  pagination: 'pagination',
 };
 
 export const SOCIAL_LINK = {

@@ -4,6 +4,7 @@ import { ProjectItem } from 'components/ProjectItem/ProjectItem';
 import { projects } from 'data/projects';
 import {
   FIRST_PAGE,
+  LINK_VARIANT,
   PAGINATION_LIMIT,
   PAGINATION_STEP,
   SECOND_PAGE,
@@ -14,6 +15,7 @@ import {
   PaginationButton,
   PageButton,
 } from './ProjectList.styled';
+import { TransitionLink } from 'components/reusable/TransitionLink';
 
 export const ProjectList = () => {
   const [page, setPage] = useState(FIRST_PAGE);
@@ -44,36 +46,57 @@ export const ProjectList = () => {
         })}
       </List>
       <Pagination>
-        <PaginationButton
-          type="button"
-          onClick={goToPreviousPage}
-          disabled={page === FIRST_PAGE}
-        >
-          <LuChevronLeft />
-        </PaginationButton>
+        <TransitionLink
+          variant={LINK_VARIANT.pagination}
+          children={
+            <PaginationButton
+              type="button"
+              onClick={goToPreviousPage}
+              disabled={page === FIRST_PAGE}
+            >
+              <LuChevronLeft />
+            </PaginationButton>
+          }
+        />
 
-        <PageButton
-          type="button"
-          onClick={() => setPage(FIRST_PAGE)}
-          disabled={page === FIRST_PAGE}
-        >
-          {FIRST_PAGE}
-        </PageButton>
-        <PageButton
-          type="button"
-          onClick={() => setPage(SECOND_PAGE)}
-          disabled={page === SECOND_PAGE}
-        >
-          {SECOND_PAGE}
-        </PageButton>
+        <TransitionLink
+          variant={LINK_VARIANT.pagination}
+          children={
+            <PageButton
+              type="button"
+              onClick={() => setPage(FIRST_PAGE)}
+              disabled={page === FIRST_PAGE}
+            >
+              {FIRST_PAGE}
+            </PageButton>
+          }
+        />
 
-        <PaginationButton
-          type="button"
-          onClick={goToNextPage}
-          disabled={page === totalPages}
-        >
-          <LuChevronRight />
-        </PaginationButton>
+        <TransitionLink
+          variant={LINK_VARIANT.pagination}
+          children={
+            <PageButton
+              type="button"
+              onClick={() => setPage(SECOND_PAGE)}
+              disabled={page === SECOND_PAGE}
+            >
+              {SECOND_PAGE}
+            </PageButton>
+          }
+        />
+
+        <TransitionLink
+          variant={LINK_VARIANT.pagination}
+          children={
+            <PaginationButton
+              type="button"
+              onClick={goToNextPage}
+              disabled={page === totalPages}
+            >
+              <LuChevronRight />
+            </PaginationButton>
+          }
+        />
       </Pagination>
     </>
   );

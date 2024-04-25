@@ -53,11 +53,13 @@ const Button = styled.button`
 export const PaginationButton = styled(Button)`
   &:disabled {
     background-color: var(--button-color);
+    cursor: default;
   }
 `;
 
 export const PageButton = styled(Button)`
   &:disabled {
     background-color: var(--accent-color);
+    cursor: default;
   }
 `;

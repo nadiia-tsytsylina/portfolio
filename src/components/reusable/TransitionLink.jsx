@@ -1,8 +1,9 @@
+import { Link } from 'react-scroll';
 import { LuSend } from 'react-icons/lu';
 import { LINK_VARIANT, MENU_PATH } from 'constants/constants';
 import { StyledLink, ContactsLink, MobileLink } from './TransitionLink.styled';
 
-export const TransitionLink = ({ path, variant, onClose }) => {
+export const TransitionLink = ({ path, variant, onClose, children }) => {
   return (
     <>
       {variant === LINK_VARIANT.nav && (
@@ -38,6 +39,17 @@ export const TransitionLink = ({ path, variant, onClose }) => {
         >
           {path.toUpperCase()}
         </MobileLink>
+      )}
+      {variant === LINK_VARIANT.pagination && (
+        <Link
+          to={MENU_PATH.projects}
+          spy={true}
+          smooth={true}
+          offset={-80}
+          duration={500}
+        >
+          {children}
+        </Link>
       )}
     </>
   );
