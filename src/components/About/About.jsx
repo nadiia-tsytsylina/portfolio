@@ -23,29 +23,28 @@ export const About = () => {
           <Subtitle>Let's get acquainted!</Subtitle>
           <TextContainer>
             <AboutText>
-              I'm a Junior Front-End developer. I possess HTML, CSS, JavaScript,
-              TypeScript, React and Next.js knowledge. I have experience working
-              on both team and individual projects.
+              I am a high-performing software engineer capable of working in a
+              highly agile software development process. Experienced in covering
+              complex tasks with tight deadlines.
             </AboutText>
             <AboutText>
-              I have been coding for more, than 1 year and during this time I
-              have done 5 successful team projects and 6 individual ones. I have
-              experience working in a Team Challenge on a team project, where I
-              was one of two Frontend Developers.
+              I successfully completed a three-month internship at ZenBitTech as
+              a Full-Stack Developer. During that time, I explored a wide range
+              of technologies, strengthened my problem-solving skills, and
+              gained hands-on experience that fundamentally shaped my approach
+              to coding.
             </AboutText>
             <AboutText>
-              Successfully completed a three-month internship at ZenBitTech on
-              Full-Stack developer position. During this time, I mastered many
-              new technologies and improved my skills. After the internship, I
-              can say with confidence that my approach to writing code has
-              radically changed and I gained incredible work experience
+              Currently, I work at CGS-Team as a Full-Stack Developer, bringing
+              real-world commercial experience to my projects. I take pride in
+              quickly learning new tools and frameworks, writing clean and
+              maintainable code, and always striving to meet deadlines without
+              compromising quality.
             </AboutText>
             <AboutText>
-              My goal is to join a team that is both friendly and professional,
-              where I can enhance my skills and contribute to achieving team
-              results. I have a talent for quickly acquiring new skills and
-              absorbing new information. I am diligent in completing my tasks
-              promptly and never fail to meet deadlines.
+              I love challenges that push me to grow, enjoy collaborating with
+              teammates, and believe that every project is an opportunity to
+              learn something new and make a meaningful impact.
             </AboutText>
           </TextContainer>
         </AboutContainer>

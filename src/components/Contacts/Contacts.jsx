@@ -1,5 +1,5 @@
 import { LuMapPin } from 'react-icons/lu';
-import { FaTelegram, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaTelegram, FaGithub } from 'react-icons/fa';
 import {
   EMAIL,
   LOCATION,
@@ -50,7 +50,7 @@ export const Contacts = () => {
               {SOCIAL_LINK.telegram.name}
             </SocialLink>
           </li>
-          <li>
+          {/* <li>
             <SocialLink
               href={SOCIAL_LINK.linkedin.link}
               target="_blank"
@@ -59,7 +59,7 @@ export const Contacts = () => {
               <FaLinkedin />
               {SOCIAL_LINK.linkedin.name}
             </SocialLink>
-          </li>
+          </li> */}
           <li>
             <SocialLink
               href={SOCIAL_LINK.gitHub.link}

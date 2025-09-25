@@ -6,7 +6,7 @@ export const EMAIL = 'miniova95@gmail.com';
 export const PHONE = '+380961640306';
 export const LOCATION = 'Lviv, Ukraine';
 export const CV_LINK =
-  'https://drive.google.com/file/d/1mpEOElr7r9YaqPMvuFahKc74iHqKWHTL/view?usp=sharing';
+  'https://drive.google.com/file/d/1AoUuS94fxy3Nxo94qnheUaggAGv7K0eO/view?usp=sharing';
 
 export const MENU_PATH = {
   home: 'home',

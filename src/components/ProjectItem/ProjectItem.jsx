@@ -30,18 +30,20 @@ export const ProjectItem = ({ project }) => {
               Demo <LuArrowUpRightSquare />
             </Link>
           </li>
-          <li>
-            <Link
-              rel="noreferrer noopener"
-              target="_blank"
-              href={project.github}
-            >
-              Github
-              <LuGithub />
-            </Link>
-          </li>
-          <li>
-            {project.backend && (
+          {project.github && (
+            <li>
+              <Link
+                rel="noreferrer noopener"
+                target="_blank"
+                href={project.github}
+              >
+                Github
+                <LuGithub />
+              </Link>
+            </li>
+          )}
+          {project.backend && (
+            <li>
               <Link
                 rel="noreferrer noopener"
                 target="_blank"
@@ -49,8 +51,19 @@ export const ProjectItem = ({ project }) => {
               >
                 Backend <LuSettings />
               </Link>
-            )}
-          </li>
+            </li>
+          )}
+          {project.landing && (
+            <li>
+              <Link
+                rel="noreferrer noopener"
+                target="_blank"
+                href={project.landing}
+              >
+                Landing <LuArrowUpRightSquare />
+              </Link>
+            </li>
+          )}
         </LinkList>
       </DescrContainer>
     </Item>
